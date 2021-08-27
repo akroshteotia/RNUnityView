@@ -3,15 +3,17 @@
     <Files>
       <File FileName="Assets/Scripts/Demo.cs" Line="14" Column="26" />
       <File FileName="Assets/Scripts/UnityMessageManager.cs" />
-      <File FileName="Assets/Editor/Build.cs" Line="16" Column="59" />
+      <File FileName="Assets/Editor/Build.cs" Line="33" Column="46" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Demo" expanded="True">
-            <Node name="Assets" expanded="True" selected="True">
+            <Node name="Assets" expanded="True">
               <Node name="Editor" expanded="True" />
-              <Node name="Scripts" expanded="True" />
+              <Node name="Scripts" expanded="True">
+                <Node name="Demo.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
@@ -20,7 +22,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="1ffc657f-b7d1-4151-9a10-17ba049d2d93" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="ad9b59da-60b8-41d1-ae12-bdb62e114b5a" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -78,9 +78,6 @@ class App extends React.Component<Props, State>{
       this.setState({ startTimer: hander.data });
     if(hander.name == 'FPS')
         this.setState({ fps: hander.data });
-    setTimeout(() => {
-      hander.send('I am click callback!');
-    }, 2000);
   }
 
   render() {
@@ -99,7 +96,7 @@ class App extends React.Component<Props, State>{
 
     return(
       <View style={[styles.container]}>
-        {unityElement}
+        {renderUnity ? unityElement : null}
         <Text style={styles.welcome, {color: renderUnity ? 'white' : 'black' }}>
           Welcome to React Native Unity View!
         </Text>
