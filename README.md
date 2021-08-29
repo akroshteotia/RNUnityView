@@ -40,7 +40,7 @@ Integrate unity3d within a React Native app. Add a react native component to sho
 2. Follow the wizard to create project.
 
 
-#### Copy files
+## Copy files
 
 ### Unity
 
