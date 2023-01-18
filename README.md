@@ -93,7 +93,7 @@ Integrate unity3d within a React Native app. Add a react native component to sho
     pod install
     ```
 5. Open <yourreactnativeprojectname.workspace> in xCode
-6. Modify ####main.m
+6. Modify `main.m`
     ```
     #import "UnityUtils.h"
 
