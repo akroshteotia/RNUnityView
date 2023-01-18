@@ -93,7 +93,17 @@ Integrate unity3d within a React Native app. Add a react native component to sho
     pod install
     ```
 5. Open <yourreactnativeprojectname.workspace> in xCode
-6. Open pod file and add these lines
+6. Modify ####main.m
+    ```
+    #import "UnityUtils.h"
+
+    int main(int argc, char * argv[]) {
+      @autoreleasepool {
+        InitArgs(argc, argv);
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+      }
+    ```
+7. Open pod file and add these lines
     ```
     post_install do |installer|
      installer.pods_project.targets.each do |target|
@@ -115,10 +125,9 @@ Integrate unity3d within a React Native app. Add a react native component to sho
        end
      end
     end
-    end
     ```
-7. Go to Libraries folder under <yourreactnativeprojectname> and rigth click on it. Click on "AddFiles".
-8. Navigate to UnityExport folder and add Unity-iPhone.xcodeproj
-9. Under Unity-iPhone.xcodeproj got products there is UnityFramwork.framework.
-10. Add UnityFramwork.framework to <yourreactnativeprojectname>/General/EmbeddedContent
-11. Click run and you are good to go.
+8. Go to Libraries folder under <yourreactnativeprojectname> and rigth click on it. Click on "AddFiles".
+9. Navigate to UnityExport folder and add Unity-iPhone.xcodeproj
+10. Under Unity-iPhone.xcodeproj got products there is UnityFramwork.framework.
+11. Add UnityFramwork.framework to <yourreactnativeprojectname>/General/EmbeddedContent
+12. Click run and you are good to go.
