@@ -137,6 +137,7 @@ static BOOL _isUnityReady = NO;
     }];
 
     if (UnityIsInited()) {
+        completed();
         return;
     }
 
@@ -156,6 +157,9 @@ static BOOL _isUnityReady = NO;
         [application.windows[1] makeKeyWindow];
         
         [UnityUtils listenAppState];
+        
+        // call completed callback
+        completed();
     });
 }
 
